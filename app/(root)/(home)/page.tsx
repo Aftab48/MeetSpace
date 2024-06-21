@@ -3,10 +3,7 @@ import MeetingTypeList from '@/components/MeetingTypeList';
 const Home = () => {
   const now = new Date();
 
-  const time = now.toLocaleTimeString(undefined, {
-    hour: '2-digit',
-    minute: '2-digit',
-  });
+  const time = now.toLocaleTimeString();
 
   const date = new Intl.DateTimeFormat('en-us', { dateStyle: 'full' }).format(
     now,
